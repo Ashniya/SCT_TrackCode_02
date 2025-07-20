@@ -1,0 +1,43 @@
+.stopwatch-bg {
+  @apply bg-gradient-to-br from-purple-100 to-blue-100 min-h-screen flex items-center justify-center font-sans;
+}
+
+.stopwatch-container {
+  @apply bg-white shadow-xl rounded-2xl p-8 w-full max-w-md text-center;
+}
+
+.stopwatch-title {
+  @apply text-3xl font-bold mb-6 text-purple-700;
+}
+
+.stopwatch-display {
+  @apply text-5xl font-mono mb-4 text-gray-800;
+}
+
+.stopwatch-buttons {
+  @apply flex justify-center gap-4 mb-4;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md text-white transition;
+}
+
+.btn-green {
+  @apply bg-green-500 hover:bg-green-600;
+}
+
+.btn-yellow {
+  @apply bg-yellow-400 hover:bg-yellow-500;
+}
+
+.btn-red {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.btn-blue {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.lap-list {
+  @apply max-h-40 overflow-auto border-t border-gray-300 pt-2 text-sm text-gray-600 space-y-1;
+}

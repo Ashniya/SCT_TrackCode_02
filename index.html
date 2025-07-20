@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen flex items-center justify-center font-sans text-white">
+
+
+ <div class="bg-[#D2C1B6] shadow-xl rounded-2xl p-8 w-full max-w-md text-center">
+
+    <h1 class="text-3xl font-bold mb-6 text-gray-900 font-mono">⏱Stopwatch</h1>
+
+    <div id="display" class="text-5xl font-mono mb-4 text-gray-800">00:00:00</div>
+
+    <div class="flex justify-center gap-4 mb-4">
+      <button id="startBtn" class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600 transition">Start</button>
+      <button id="pauseBtn" class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-400 transition hidden">Pause</button>
+      <button id="resetBtn" class="px-4 py-2 rounded-md bg-gray-500 hover:bg-gray-600">Reset</button>
+      <button id="lapBtn" class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600 transition">Lap</button>
+    </div>
+
+    <div class="text-left">
+      <h2 class="text-lg font-semibold text-gray-700 mb-2">Lap Times</h2>
+      <ul id="laps" class="max-h-40 overflow-auto border-t border-gray-300 pt-2 text-sm text-gray-600 space-y-1"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
